@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         protected Bitmap doInBackground(String... params) {
             String url=params[0];
             Bitmap bitmap=null;
-            URLConnection connection;
+            URLConnection connection;//连接
             InputStream is;
             try {
                 connection=new URL(url).openConnection();//获取连接对象
